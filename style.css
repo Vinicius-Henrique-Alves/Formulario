@@ -2,25 +2,27 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../image/fundo_formulario.png);
-    background-position:  center;
+    background:url(../image/fundo_formulario.png);
     background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: auto;
     color: lightgray;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255 , 0.4);
 }
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 4px;
+    padding: 4px; 
 }
 .centro{
     background-color: rgb(0,0,0, 0.4);
     border-radius: 20px;
     border: 2px rgba(255, 255, 255, 0.1) solid ;
     margin: 20px;
-    padding: 40%;
+    padding: 4%;
 }
 h1{
     font-size: 64px;
@@ -38,12 +40,19 @@ input{
     width: 200px;
     border-radius: 15px;
     padding: 0px 20px;
+    background-color:rgb(60, 82, 107, 0.4) ;
+    transition:all 0.3s;
+    color: white;
+}
+input:hover{
+    background-color: lightgray;
+    color:black;
 }
 
 input.submit{
     cursor: pointer;
     background-color: lightgray;
-    transition: all 0.3s;
+    color: black;
 }
 input.submit:hover{
     background-color: gray;
